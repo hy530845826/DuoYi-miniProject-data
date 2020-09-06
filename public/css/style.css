@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #121029;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#db-BOX {
+  margin: 0 auto;
+  width: 1500px;
+}
+
+#db-BOX .header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#db-BOX .header .header-title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(37%, #fff), color-stop(63%, #00a1ff));
+  background: linear-gradient(#fff 37%, #00a1ff 63%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 30px;
+  height: 80px;
+  line-height: 80px;
+}
+
+#db-BOX .header .header-left {
+  position: relative;
+  width: 30%;
+  height: 40px;
+  /* Safari 5.1 - 6.0 */
+  /* Opera 11.1 - 12.0 */
+  /* Firefox 3.6 - 15 */
+  background: -webkit-gradient(linear, left top, right top, from(rgba(47, 97, 182, 0)), to(#2f61b6));
+  background: linear-gradient(to right, rgba(47, 97, 182, 0), #2f61b6);
+}
+
+#db-BOX .header .header-left:after {
+  content: '';
+  width: 40px;
+  height: 40px;
+  background: #121029;
+  position: absolute;
+  top: 0;
+  right: -30px;
+  -webkit-transform: skew(-20deg, 0deg);
+  border-right: solid 1px #223e90;
+}
+
+#db-BOX .header .header-left-broken-line {
+  width: 20px;
+  height: 40px;
+  background: #121029;
+  -webkit-transform: skew(-20deg, 0deg);
+  border-right: solid 1px #223e90;
+  padding-left: 10px;
+  position: absolute;
+  right: -20px;
+  z-index: 2;
+}
+
+#db-BOX .header .header-right {
+  position: relative;
+  width: 30%;
+  height: 40px;
+  /* Safari 5.1 - 6.0 */
+  /* Opera 11.1 - 12.0 */
+  /* Firefox 3.6 - 15 */
+  background: -webkit-gradient(linear, left top, right top, from(#2f61b6), to(rgba(47, 97, 182, 0)));
+  background: linear-gradient(to right, #2f61b6, rgba(47, 97, 182, 0));
+}
+
+#db-BOX .header .header-right:before {
+  content: '';
+  width: 40px;
+  height: 40px;
+  background: #121029;
+  position: absolute;
+  top: 0;
+  left: -30px;
+  -webkit-transform: skew(20deg, 0deg);
+  border-left: solid 1px #223e90;
+}
+
+#db-BOX .header .header-right-broken-line {
+  width: 20px;
+  height: 40px;
+  background: #121029;
+  -webkit-transform: skew(20deg, 0deg);
+  border-left: solid 1px #223e90;
+  padding-left: 10px;
+  position: absolute;
+  left: -20px;
+  z-index: 2;
+}
+
+#db-BOX .header .broken-line {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#db-BOX .header .broken-line-left,
+#db-BOX .header .broken-line-right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#db-BOX #db-content {
+  width: 100%;
+  overflow: hidden;
+}
+
+#db-BOX #db-content #db-slide {
+  float: left;
+  height: 684px;
+  margin-right: 10px;
+  background: rgba(16, 15, 55, 0.2);
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+#db-BOX #db-content #echarts-pic {
+  float: left;
+  width: 1060px;
+  height: 684px;
+  background: rgba(16, 15, 55, 0.2);
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+#db-BOX #db-content .box {
+  background: -webkit-gradient(linear, right top, left top, from(rgba(2, 118, 220, 0.5)), to(rgba(2, 118, 220, 0.5))) left top no-repeat, -webkit-gradient(linear, left top, left bottom, from(rgba(2, 118, 220, 0.5)), to(rgba(2, 118, 220, 0.5))) left top no-repeat, -webkit-gradient(linear, right top, left top, from(rgba(2, 118, 220, 0.5)), to(rgba(2, 118, 220, 0.5))) right top no-repeat, -webkit-gradient(linear, left top, left bottom, from(rgba(2, 118, 220, 0.5)), to(rgba(2, 118, 220, 0.5))) right top no-repeat, -webkit-gradient(linear, right top, left top, from(rgba(2, 118, 220, 0.5)), to(rgba(2, 118, 220, 0.5))) left bottom no-repeat, -webkit-gradient(linear, left top, left bottom, from(rgba(2, 118, 220, 0.5)), to(rgba(2, 118, 220, 0.5))) left bottom no-repeat, -webkit-gradient(linear, right top, left top, from(rgba(2, 118, 220, 0.5)), to(rgba(2, 118, 220, 0.5))) right bottom no-repeat, -webkit-gradient(linear, right top, left top, from(rgba(2, 118, 220, 0.5)), to(rgba(2, 118, 220, 0.5))) right bottom no-repeat;
+  background: linear-gradient(to left, rgba(2, 118, 220, 0.5), rgba(2, 118, 220, 0.5)) left top no-repeat, linear-gradient(to bottom, rgba(2, 118, 220, 0.5), rgba(2, 118, 220, 0.5)) left top no-repeat, linear-gradient(to left, rgba(2, 118, 220, 0.5), rgba(2, 118, 220, 0.5)) right top no-repeat, linear-gradient(to bottom, rgba(2, 118, 220, 0.5), rgba(2, 118, 220, 0.5)) right top no-repeat, linear-gradient(to left, rgba(2, 118, 220, 0.5), rgba(2, 118, 220, 0.5)) left bottom no-repeat, linear-gradient(to bottom, rgba(2, 118, 220, 0.5), rgba(2, 118, 220, 0.5)) left bottom no-repeat, linear-gradient(to left, rgba(2, 118, 220, 0.5), rgba(2, 118, 220, 0.5)) right bottom no-repeat, linear-gradient(to left, rgba(2, 118, 220, 0.5), rgba(2, 118, 220, 0.5)) right bottom no-repeat;
+  background-size: 1px 20px, 20px 1px, 1px 20px, 20px 1px;
+  border: solid 2px rgba(6, 104, 186, 0.4);
+  border-radius: 3px;
+  margin-top: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+#db-BOX #db-content .box .title {
+  width: calc(100% - 80px);
+  margin: 20px;
+  height: 40px;
+  line-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  color: #fff;
+  background: rgba(10, 29, 83, 0.8);
+  border: solid 2px rgba(40, 183, 251, 0.4);
+  -webkit-box-shadow: 0 0 3px rgba(40, 62, 225, 0.25);
+          box-shadow: 0 0 3px rgba(40, 62, 225, 0.25);
+  cursor: pointer;
+}
+
+#db-BOX #db-content .box .checked {
+  position: relative;
+  background: rgba(30, 61, 148, 0.8);
+}
+
+#db-BOX #db-content .box .checked:after {
+  content: '';
+  width: 15px;
+  height: 18px;
+  background: #121029;
+  position: absolute;
+  z-index: 2;
+  top: 24px;
+  right: -12px;
+  border-left: solid 3px rgba(40, 183, 251, 0.4);
+  -webkit-transform: skew(-30deg, 0deg);
+  cursor: default;
+}
+
+#db-BOX #db-content #model {
+  width: 100%;
+  height: 660px;
+}
+/*# sourceMappingURL=style.css.map */

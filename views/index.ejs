@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>O4-2神武卡牌数据分析</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="db-BOX">
+        <div class="header">
+            <div class="header-left">
+                <div class="header-left-broken-line"></div>
+            </div>
+            <div class="header-title">O4-2神武卡牌 数据分析</div>
+            <div class="header-right">
+                <div class="header-right-broken-line"></div>
+            </div>
+        </div>
+        <div id="db-content">
+            <div id="db-slide">
+                <div class="box">
+                    <div class="title">战斗阵容胜利场数分析。。。</div>
+                    <div class="title">门派胜率分析。。。</div>
+                    <div class="title">11</div>
+                    <div class="title">11</div>
+                    <div class="title">战斗阵容胜利占比分析。。。</div>
+                    <div class="title">门派胜利占比</div>
+                    <div class="title">11</div>
+                    <div class="title">11</div>
+                    <div class="title">11</div>
+                    <div class="title">11</div>
+                </div>
+            </div>
+            <div id="echarts-pic">
+                <div class="box">
+                    <div id="model">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/echarts.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script>
+        var titleBox = $('#db-slide .box .title')
+        //用来代替下面隐藏内容因为会刷新页面重新加载
+        // var urlindex = window.location.href;
+        // urlindex = parseInt(urlindex.substr(-1, 1));
+        // titleBox.eq(urlindex).addClass("checked");
+
+        //点击函数：改变checked，添加url
+        titleBox.click(function () {
+            $(this).siblings().removeClass("checked");
+            $(this).addClass("checked");
+            var nowIndex = $(this).index();
+            $.get("http://127.0.0.1:8000/dataPic" + nowIndex, function (data) {
+                fuck(nowIndex, data); //启动ECharts函数渲染
+            })
+            // location.href = '/dataPic' + nowIndex;
+        })
+    </script>
+    <script src="js/walden.js"></script>
+    <script src="js/world.js"></script>
+    <script src="js/echarts-gl.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
