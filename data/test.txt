@@ -1,0 +1,19 @@
+[12:36.42] pubdialog.DialogMgr: - INFO - <class 'mini.pvp.view.v_main.CMainUI'> OnDlgAniBegin
+[12:36.42] pubdialog.DialogMgr: - INFO - <class 'mini.pvp.view.v_main.CMainUI'> OnDlgAniEnd
+[12:36.42] pubdialog.DialogMgr: - INFO - <class 'mini.pvp.view.v_main.CMainUI'> OnDlgOpenDidFinish
+[12:36.42] pubdialog.DialogMgr: - INFO - 当前界面栈:
+[12:36.42] pubdialog.DialogMgr: - INFO - <class 'login.v_login.CLoadingPanel'>
+[12:36.42] pubdialog.DialogMgr: - INFO - <class 'mini.pvp.view.v_main.CMainUI'>
+[12:36.42] pubdialog.DialogMgr: - INFO - <class 'login.v_login.CLoadingPanel'> OnDlgClose
+[12:36.43] pubdialog.DialogMgr: - INFO - <class 'mini.pvp.view.v_main.CMainUI'> OnDlgAniBegin
+[12:36.43] WARNING: should not use Interlace png!:C:/Users/duoyi/Desktop/client/Release_win32/../Resources/Res/PVE/hongchenlvtu.png
+[12:36.43] $({"win":["1","10","100"],"lose":["1","10","1000"]})
+[12:36.43] $({"win":["10000000","10000","100"],"lose":["1000","10","100"]})
+[12:36.43] $({"win":["10000000","10000","100"],"lose":["1000","10","100"]})
+[12:36.42] pubdialog.DialogMgr: - INFO - <class 'mini.pvp.view.v_main.CMainUI'> OnDlgOpenDidFinish
+[12:36.42] pubdialog.DialogMgr: - INFO - 当前界面栈:
+[12:36.42] pubdialog.DialogMgr: - INFO - <class 'login.v_login.CLoadingPanel'>
+[12:36.42] pubdialog.DialogMgr: - INFO - <class 'mini.pvp.view.v_main.CMainUI'>
+[12:36.42] pubdialog.DialogMgr: - INFO - <class 'login.v_login.CLoadingPanel'> OnDlgClose
+[12:36.43] pubdialog.DialogMgr: - INFO - <class 'mini.pvp.view.v_main.CMainUI'> OnDlgAniBeginl
+[12:36.43] WARNING: should not use Interlace png!:C:/Users/duoyi/Desktop/client/Release_win32/../Resources/Res/PVE/hongchenlvtu.png

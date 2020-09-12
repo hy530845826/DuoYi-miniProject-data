@@ -8,7 +8,7 @@ function fuck(picId, picData) {
             //生成图表配置
             var tempOptions = {
                 title: {
-                    text: '2019年影评分和电影数量分析'
+                    text: '卡牌分析'
                 },
                 tooltip: {
                     trigger: 'axis',
@@ -23,34 +23,28 @@ function fuck(picId, picData) {
                 xAxis: {
                     name: '评分',
                     type: 'category',
-                    data: ['9.5-10.0',
-                        '9.0-9.5',
-                        '8.5-9.0',
-                        '8.0-8.5',
-                        '7.5-8.0',
-                        '7.0-7.5',
-                        '6.5-7.0',
-                        '6.0-6.5',
-                        '5.5-6.0',
-                        '5.0-5.5',
-                        '4.5-5.0',
-                        '4.0-4.5',
-                        '3.5-4.0',
-                        '3.0-4.5',
-                        '2.5-3.0',
-                        '2.5以下'
+                    data: ['天策',
+                        '东海龙宫',
+                        '佛门',
+                        '七星方寸',
+                        '万兽岭',
+                        '魔王山',
+                        '盘丝岭',
+                        '南海普陀',
+                        '凌霄天宫',
+                        '曜华城'
                     ]
                 },
                 yAxis: {
-                    name: '数量：部'
+                    name: '数量：次数'
                 },
                 series: [{
-                        name: '中国大陆',
+                        name: '胜利',
                         type: 'bar',
                         data: []
                     },
                     {
-                        name: '美国',
+                        name: '失败',
                         type: 'bar',
                         data: []
                     }
@@ -58,11 +52,17 @@ function fuck(picId, picData) {
             };
             //插入数据
             var picData = JSON.parse(picData)
-            for (var i in picData) {
-                var nowData = picData[i]
-                for (var item in nowData) {
-                    tempOptions.series[i].data.push(nowData[item]);
-                }
+            console.log('0000000000000000000000000000')
+            console.log(picData[2])
+            console.log( tempOptions.series[0].data)
+            for (var i in picData[2]) {
+                // var nowData = picData[i]
+                // for (var item in nowData) {
+                tempOptions.series[0].data.push(picData[2][i]);
+                // }
+            }
+            for (var i in picData[3]) {
+                tempOptions.series[1].data.push(picData[3][i]);
             }
             break;
         case 1: //2.对比任意两个国家电影评分和电影数量的折线图
